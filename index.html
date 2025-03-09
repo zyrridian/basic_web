@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Submission</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">
+        <h1>Encyclopedia</h1>
+      </div>
+      <!-- HAMBURGER MENU -->
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search..."
+          class="search-bar"
+        />
+        <button onclick="searchArticles()" class="btn">Search</button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="content" id="content">
+        <article>
+          <h2>Is Oxygen a Slow-Acting Poison?</h2>
+          <p>
+            We breathe oxygen to survive, but what if it's actually killing us
+            slowly? Oxygen plays a vital role in cellular respiration, but it
+            also causes oxidative stress, which leads to aging and cellular
+            damage. Over time, this accumulation contributes to diseases and
+            even our eventual death. Could we ever survive without it?
+          </p>
+        </article>
+
+        <article>
+          <h2>Using Giant Mirrors in Space to See the Past</h2>
+          <p>
+            If we placed a giant mirror light-years away and looked at it with a
+            powerful telescope, we could see Earth’s past due to the time light
+            takes to travel. But how could we position such a mirror instantly,
+            or is there already one in space? Could this be the key to seeing
+            historical events as they happened?
+          </p>
+        </article>
+
+        <article>
+          <h2>Could We Build a Dyson Sphere?</h2>
+          <p>
+            A Dyson Sphere, a hypothetical megastructure surrounding a star,
+            could harness immense energy. But is it actually feasible? The
+            materials, engineering, and physics behind this concept push the
+            limits of what we know. If an advanced civilization built one, would
+            we even notice?
+          </p>
+        </article>
+      </section>
+
+      <!-- NO RESULTS (Bocchi GIF) -->
+      <div
+        id="no-results"
+        class="no-results-container"
+        style="display: none; text-align: center"
+      >
+        <img
+          src="images/bocchi.gif"
+          alt="Bocchi is anxious"
+          style="width: 250px; height: auto; margin-top: 20px"
+        />
+        <p style="color: var(--text-color); font-size: 18px; font-weight: bold">
+          No results found. Bocchi is panicking...
+        </p>
+      </div>
+
+      <!-- ASIDE (AUTHOR INFO) -->
+      <aside>
+        <h2>About the Author</h2>
+        <img src="images/bocchi.jpg" alt="Bocchi's Photo" />
+        <p>Name: Bocchi</p>
+        <p>
+          Bio: A passionate guitarist and music enthusiast who enjoys expressing
+          creativity through sound.
+        </p>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 My Modern Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+  </body>
+</html>
